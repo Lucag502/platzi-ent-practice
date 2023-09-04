@@ -1,0 +1,19 @@
+{
+  "name": "platzi-ent-practice",
+  "version": "1.0.0",
+  "description": "Practica para consumo de API REST platzi",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucag502/platzi-ent-practice.git"
+  },
+  "author": "@Lucag502",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lucag502/platzi-ent-practice/issues"
+  },
+  "homepage": "https://github.com/Lucag502/platzi-ent-practice#readme"
+}
