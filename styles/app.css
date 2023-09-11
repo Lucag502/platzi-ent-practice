@@ -26,8 +26,8 @@ body{
  }
 
  h1{
-    font-weight: 600;
-    font-size: 28px;
+    font-weight: 500;
+    font-size: 24px;
  }
 
  h2{
@@ -39,5 +39,27 @@ body{
     font-size:20px;
     font-weight: 400;
  }
+ .main-content{
+    display:grid;
+    grid-template-columns: 220px 220px 220px;
+    gap: 15px;
+    text-align: center;
+ }
 
- 
+ .side-content{
+    grid-template-columns: 135px;
+ }
+
+ .trending-preview{
+    align-items: center;
+ }
+
+ .movie-container img{
+    width: 150px;
+    height: 205px;
+    margin: 15px;
+ }
+
+.inactive{
+    display: none;
+}
