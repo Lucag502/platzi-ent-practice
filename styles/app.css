@@ -1,4 +1,43 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+:root{
+    --purple-display:#370D1E;
+    --font-family-title: 'Cabin';
+}
+
+html{
+    background-color: black;
+}
+
+body{
+    font-family: var(--font-family-title);
+    background-color: var(--purple-display);
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+ h1, h2, p{
+    margin: 0;
+    padding: 0;
+    color: white;
+ }
+
+ h1{
+    font-weight: 600;
+    font-size: 28px;
+ }
+
+ h2{
+    font-size: 24px;
+    font-weight: 500;
+ }
+
+ p{
+    font-size:20px;
+    font-weight: 400;
+ }
+
+ 
