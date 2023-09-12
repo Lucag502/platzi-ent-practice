@@ -25,18 +25,23 @@ body{
     color: white;
  }
 
+ header h1{
+   font-size: 28px;
+   font-weight: 600;
+ }
+
  h1{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 24px;
  }
 
  h2{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
  }
 
  p{
-    font-size:20px;
+    font-size: 16px;
     font-weight: 400;
  }
  .main-content{
@@ -52,16 +57,23 @@ body{
  }
 
  .categories-select{
-    text-align: center;
+   position: absolute;
     margin: 10px;
-
+    bottom: 300px;
+    left: 750px;
+    text-align: center;
+ }
+ .categories-select h2{
+   margin: 30px;
+   border-style: solid;
+   border-radius: 15px;
  }
  
  .categories{
+   display: grid;
+   grid-template-columns: repeat(3, 175px);
+   grid-template-rows: repeat(3, 50px);
     margin:20px;
-    display: grid;
-    grid-template-columns: 240px 240px 240px;
-    grid-template-rows: 100px 100px 100px;
  }
 
  .trending-preview{
