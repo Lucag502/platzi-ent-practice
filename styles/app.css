@@ -75,13 +75,25 @@ body{
    height: 165px;
  }
 
- .input-checkbox{
+ .categories{
+   margin:20px;
+}
+
+.categories p{
    text-align: justify;
+}
+ .categories-preview{
+   bottom: 41px;
+    left: 900px;
+    position: absolute;
  }
 
- .categories{
-    margin:20px;
+ .categories-preview h2{
+   margin: 15px;
  }
+
+ 
+ 
 
  label{
    height: 20px;
