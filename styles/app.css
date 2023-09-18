@@ -44,23 +44,30 @@ body{
     font-size: 16px;
     font-weight: 400;
  }
+ 
  .main-content{
+   justify-content: start;
+   align-content: start;
+   position: relative;
     display:grid;
-    grid-template-columns: 220px 220px 220px;
+    grid-template-columns: repeat(3, 220px);
     gap: 15px;
     text-align: center;
     margin: 10px;
  }
 
  .side-content{
+   justify-content: end;
+   align-content: start;
+   position: relative;
     display: grid;
+    /* grid-template-rows: repeat(2, 250px); */
+    grid-template-columns: 507px;
  }
 
  .categories-select{
-   position: absolute;
+   position: relative;
     margin: 10px;
-    bottom: 300px;
-    left: 750px;
     text-align: center;
  }
  .categories-select h2{
@@ -69,10 +76,11 @@ body{
    border-radius: 15px;
  }
  #categories-form{
+   justify-content: end;
    display:grid;
    grid-template-columns: repeat(3, 150px);
    grid-template-rows: repeat(3, 40px);
-   height: 165px;
+   /* height: 165px; */
  }
 
  .categories{
@@ -83,17 +91,14 @@ body{
    text-align: justify;
 }
  .categories-preview{
-   bottom: 41px;
-    left: 900px;
-    position: absolute;
+   /* bottom: 41px;
+    left: 900px; */
+    position: relative;
  }
 
  .categories-preview h2{
    margin: 15px;
  }
-
- 
- 
 
  label{
    height: 20px;
