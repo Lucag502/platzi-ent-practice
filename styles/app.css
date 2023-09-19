@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 :root{
@@ -48,63 +49,50 @@ body{
  #text-movies{
    margin-top: 10px;
    margin-bottom: 10px;
+   text-align: center;
  }
 
  #movie-container{
    text-align: center;
  }
 
- .main-content{
-   justify-content: start;
-   align-content: start;
-   position: relative;
-    display:grid;
-    grid-template-columns: repeat(3, 220px);
-    gap: 15px;
-    text-align: center;
-    margin: 10px;
- }
 
- #trending-preview{
-   text-align: end;
- }
+ /* Side content */
 
  .categories-select{
-   position: absolute;
-    text-align: center;
-    align-content: end;
+   position: relative;
+   justify-content: end;
  }
+
  .categories-select h2{
    margin: 15px;
+   text-align: center;
    border-style: solid;
    border-radius: 15px;
  }
- #categories-form{
-   justify-content: center;
+
+
+#categories-form{
    display:grid;
    grid-template-columns: repeat(3, 150px);
-   grid-template-rows: repeat(3, 40px);
- }
-
- .categories{
-   margin:20px;
+   grid-template-rows: repeat(3, 40px); 
+   justify-content: center;
 }
 
 #categories-preview{
    position: absolute;
 }
 
-.categories p{
-   text-align: justify;
-}
  .categories-preview h2{
    margin: 15px;
  }
 
- label{
-   height: 20px;
-   width: 50px;
- }
+ input {
+   height: 13px;
+   position: relative;
+   top: -5px;
+   overflow: hidden;
+}
 
 .inactive{
     display: none;
