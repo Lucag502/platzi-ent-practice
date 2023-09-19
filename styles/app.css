@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 :root{
@@ -12,6 +11,7 @@
 
 html{
     background-color: black;
+    overflow-x: hidden;
 }
 
 body{
@@ -56,8 +56,12 @@ body{
    text-align: center;
  }
 
+ #movie-container img{
+   border-radius: 15px;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.70);
+   background: lightgray 50%/ cover no-repeat;
+ }
 
- /* Side content */
 
  .categories-select{
    position: relative;
@@ -90,7 +94,6 @@ body{
  input {
    height: 13px;
    position: relative;
-   top: -5px;
    overflow: hidden;
 }
 
