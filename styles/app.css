@@ -44,7 +44,16 @@ body{
     font-size: 16px;
     font-weight: 400;
  }
- 
+
+ #text-movies{
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+
+ #movie-container{
+   text-align: center;
+ }
+
  .main-content{
    justify-content: start;
    align-content: start;
@@ -56,19 +65,14 @@ body{
     margin: 10px;
  }
 
- .side-content{
-   justify-content: end;
-   align-content: start;
-   position: relative;
-    display: grid;
-    /* grid-template-rows: repeat(2, 250px); */
-    grid-template-columns: 507px;
+ #trending-preview{
+   text-align: end;
  }
 
  .categories-select{
-   position: relative;
-    margin: 10px;
+   position: absolute;
     text-align: center;
+    align-content: end;
  }
  .categories-select h2{
    margin: 15px;
@@ -76,26 +80,23 @@ body{
    border-radius: 15px;
  }
  #categories-form{
-   justify-content: end;
+   justify-content: center;
    display:grid;
    grid-template-columns: repeat(3, 150px);
    grid-template-rows: repeat(3, 40px);
-   /* height: 165px; */
  }
 
  .categories{
    margin:20px;
 }
 
+#categories-preview{
+   position: absolute;
+}
+
 .categories p{
    text-align: justify;
 }
- .categories-preview{
-   /* bottom: 41px;
-    left: 900px; */
-    position: relative;
- }
-
  .categories-preview h2{
    margin: 15px;
  }
@@ -103,16 +104,6 @@ body{
  label{
    height: 20px;
    width: 50px;
- }
-
- .trending-preview{
-    align-items: center;
- }
-
- .movie-container img{
-    width: 150px;
-    height: 205px;
-    margin: 15px;
  }
 
 .inactive{
