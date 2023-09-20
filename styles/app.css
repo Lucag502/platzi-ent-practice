@@ -10,8 +10,9 @@
 }
 
 html{
-    background-color: black;
     overflow-x: hidden;
+    /* background: linear-gradient(180deg, #370D1E -70.2%, rgba(97, 64, 81, 0.00) 100%); */
+    background-color: #370D1E;
 }
 
 body{
@@ -75,7 +76,9 @@ h2, p{
 
  .categories-select{
    position: relative;
-   justify-content: end;
+   /* justify-content: end; */
+   margin-top: -20px;
+   margin-bottom: -20px;
  }
 
  .categories-select h2{
@@ -95,7 +98,8 @@ h2, p{
    display:grid;
    grid-template-columns: repeat(3, 150px);
    grid-template-rows: repeat(3, 40px); 
-   justify-content: center;
+   margin-left: 20px;
+   justify-content: start;
 }
 
 #categories-preview{
@@ -120,6 +124,10 @@ h2, p{
    height: 13px;
    position: relative;
    overflow: hidden;
+}
+
+footer{
+  background-color: black;
 }
 
 .inactive{
