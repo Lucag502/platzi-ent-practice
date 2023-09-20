@@ -23,7 +23,17 @@ body{
  h1, h2, p{
     margin: 0;
     padding: 0;
-    color: white;
+ }
+ 
+h2, p{
+   color: white;
+}
+
+ h1{
+   background: linear-gradient(176deg, #FFF 27.12%, rgba(255, 255, 255, 0.00) 137.98%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
  }
 
  header h1{
@@ -70,9 +80,14 @@ body{
 
  .categories-select h2{
    margin: 15px;
-   text-align: center;
-   border-style: solid;
    border-radius: 15px;
+   text-align: justify;
+   background: linear-gradient(178deg, #0A0000 1.82%, rgba(10, 0, 0, 0.00) 144.18%);
+   display: flex;
+   width: 485px;
+   padding: 21px 186px 21px 186px;
+   justify-content: flex-end;
+   align-items: center;
  }
 
 
@@ -87,8 +102,18 @@ body{
    position: absolute;
 }
 
- .categories-preview h2{
+ #categories-preview h2{
    margin: 15px;
+   border-radius: 15px;
+   text-align: center;
+   background: linear-gradient(178deg, #0A0000 1.82%, rgba(10, 0, 0, 0.00) 144.18%);
+   display: flex;
+   width: 485px;
+   padding: 21px 186px 21px 186px;
+   justify-content: flex-end;
+   align-items: center;
+   white-space: nowrap;
+   
  }
 
  input {
