@@ -62,13 +62,9 @@ h2, p{
    margin-bottom: 10px;
  }
 
- #movie-container{
-   text-align: center;
- }
-
  #slider{
-  text-align: end;
-  height: 450px;
+  /* text-align: end; */
+  height: 435px;
   width: 200px;
 
   overflow-y: scroll;
@@ -85,21 +81,88 @@ h2, p{
    height: 205px;
    margin-bottom: 20px;
    scroll-snap-align: center;
+   cursor: pointer;
    
  }
+
+ #slider img:hover{
+  transition: opacity 0.3s ease-in-out 0.1s;
+  opacity: 0.5;
+ }
+
+    #slider::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 25px;
+  }
+
+  /* #slider:hover::-webkit-scrollbar {
+    background-color: #0A0000;
+
+  } */
+  
+  /* #slider::-webkit-scrollbar:vertical {
+      width:20px;
+      height: 50px;
+
+      
+      
+      
+  } */
+  
+  /* #slider::-webkit-scrollbar-button:increment,#slider::-webkit-scrollbar-button {
+      display: none;
+
+      thumb #602843;
+      track #ffffff0a
+
+      
+  } 
+   */
+
+  #slider::-webkit-scrollbar-thumb{
+    height: 20px;
+    background-color: #602843;
+    border-radius: 15px;
+    border: 2px solid #f1f2f3;
+      /* transition-duration: 0.8s;
+      transition-timing-function: ease;
+      transition-delay: 0.1; */
+
+}
+
+#slider::-webkit-scrollbar-track{
+  border-radius: 15px;
+      background-color: #ffffff0a;
+      /* transition-property: background-color;
+      transition-duration: 0.8s;
+      transition-timing-function: ease;
+      transition-delay: 0.1; */
+      
+}
+  /* #slider::-webkit-scrollbar-track {
+      
+  } */
+
+  
+
+  /*#64394e
+  
+  */
 
  .movie-container img{
    border-radius: 15px;
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.70);
    background: lightgray 50%/ cover no-repeat;
-   /* width: 150px;
-   height: 205px;
-   margin-bottom: 20px; */
-   /* position:static; */
  }
 
+
+
  #trendingPreviewMovies{
-  text-align: center;
+  text-align: start;
+ }
+
+ #explorePreviewMovies{
+  text-align: start;
  }
 
 
