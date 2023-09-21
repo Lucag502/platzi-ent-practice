@@ -60,17 +60,46 @@ h2, p{
  #text-movies{
    margin-top: 10px;
    margin-bottom: 10px;
-   text-align: center;
  }
 
  #movie-container{
    text-align: center;
  }
 
- #movie-container img{
+ #slider{
+  text-align: end;
+  height: 450px;
+  width: 200px;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  
+
+ }
+ #slider img{
+  width: 100%;
+  object-fit: cover;
+  /* position: static; */
+  width: 155px;
+   height: 205px;
+   margin-bottom: 20px;
+   scroll-snap-align: center;
+   
+ }
+
+ .movie-container img{
    border-radius: 15px;
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.70);
    background: lightgray 50%/ cover no-repeat;
+   /* width: 150px;
+   height: 205px;
+   margin-bottom: 20px; */
+   /* position:static; */
+ }
+
+ #trendingPreviewMovies{
+  text-align: center;
  }
 
 
