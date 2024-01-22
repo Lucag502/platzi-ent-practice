@@ -23,14 +23,11 @@ async function getTrendingMovies(){
         
         
 
-    });
-    
-
-    
+    });   
 }
 
 async function getExploreMovies(){
-    const res = await fetch('https://api.themoviedb.org/3/movie/popular?api_key=' + API_KEY);
+    const res = await fetch('https://api.themoviedb.org/3/trending/all/week?api_key=' + API_KEY);
     const data = await res.json();
 
     const movies = data.results;
@@ -51,11 +48,10 @@ async function getExploreMovies(){
         movieContainer.appendChild(movieImg);
         slider.appendChild(movieContainer);
         exploreMovies.appendChild(slider);
-    });
-    
-
-    
+    });  
 }
+
+
 
 getExploreMovies();
 getTrendingMovies();
