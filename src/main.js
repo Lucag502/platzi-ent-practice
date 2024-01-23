@@ -51,7 +51,41 @@ async function getExploreMovies(){
     });  
 }
 
+async function getCatergoriesPreview(){
+    const res = await fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=' + API_KEY + '&language=es');
+    const data = await res.json();
+
+    const categories = data.genres;
+    categories.forEach(category => {
+        const categoriesPreviewList = document.querySelector('#categories-preview .categories-select')
+        const categoryContainer = document.createElement('div');
+
+        categoryContainer.classList.add('category-container');
+        
+        const categoryTitle = document.createElement('p');
+        categoryTitle.classList.add('category-title')
+
+     
+        categoryTitle.setAttribute('id', 'id' + category.id);
+        const categoryTitleText = document.createTextNode(category.name);
+
+        categoryTitle.appendChild(categoryTitleText);
+        categoryContainer.appendChild(categoryTitle);
+        categoriesPreviewList.appendChild(categoryContainer);
+
+        // movieImg.setAttribute('src',
+        // 'https://image.tmdb.org/t/p/w300' + movie.poster_path,);
+
+        
+        
+        
+        
+
+    });   
+}
+
 
 
 getExploreMovies();
 getTrendingMovies();
+getCatergoriesPreview();

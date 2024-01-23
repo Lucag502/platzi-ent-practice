@@ -185,15 +185,6 @@ h2, p{
    align-items: center;
  }
 
-
-#categories-form{
-   display:grid;
-   grid-template-columns: repeat(3, 150px);
-   grid-template-rows: repeat(3, 40px); 
-   margin-left: 20px;
-   justify-content: start;
-}
-
 #categories-preview{
    position: absolute;
 }
