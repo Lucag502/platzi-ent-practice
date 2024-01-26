@@ -10,8 +10,8 @@ const api=axios.create({
 
 
 async function getTrendingMovies(){
-    const {data} = await api('trending/movie/week');
-    const movies = data.movies;
+    const {data} = await api('trending/movie/day');
+    const movies = data.results;
 
     movies.forEach(movie => {
         const trendingMovies = document.querySelector('#trendingPreviewMovies')
@@ -35,9 +35,9 @@ async function getTrendingMovies(){
 
     });   
 }
-// trending/all/week
+
 async function getExploreMovies(){
-    const {data} = await api;
+    const {data} = await api('trending/movie/all/week');
     const movies = data.movies;
 
     movies.forEach(movie => {
