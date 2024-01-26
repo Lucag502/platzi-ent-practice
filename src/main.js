@@ -1,8 +1,18 @@
-async function getTrendingMovies(){
-    const res = await fetch('https://api.themoviedb.org/3/trending/movie/day?api_key=' + API_KEY);
-    const data = await res.json();
+const api=axios.create({
+    baseURL: 'https://api.themoviedb.org/3/',
+    headers: {
+    'Content-Type': 'application/json;charset=utf-8'
+    },
+    params: {
+        'api_key': API_KEY,
+    },
+});
 
-    const movies = data.results;
+
+async function getTrendingMovies(){
+    const {data} = await api('trending/movie/week');
+    const movies = data.movies;
+
     movies.forEach(movie => {
         const trendingMovies = document.querySelector('#trendingPreviewMovies')
         const movieContainer = document.createElement('div');
@@ -25,12 +35,11 @@ async function getTrendingMovies(){
 
     });   
 }
-
+// trending/all/week
 async function getExploreMovies(){
-    const res = await fetch('https://api.themoviedb.org/3/trending/all/week?api_key=' + API_KEY);
-    const data = await res.json();
+    const {data} = await api;
+    const movies = data.movies;
 
-    const movies = data.results;
     movies.forEach(movie => {
         const exploreMovies = document.querySelector('#explorePreviewMovies')
         const movieContainer = document.createElement('div');
@@ -52,18 +61,27 @@ async function getExploreMovies(){
 }
 
 async function getCatergoriesPreview(){
-    const res = await fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=' + API_KEY + '&language=es');
-    const data = await res.json();
-
+    const {data} = await api('genre/movie/list'+ '&language=es');
     const categories = data.genres;
+    
     categories.forEach(category => {
         const categoriesPreviewList = document.querySelector('#categories-preview .categories-select')
         const categoryContainer = document.createElement('div');
 
         categoryContainer.classList.add('category-container');
+
+        
         
         const categoryTitle = document.createElement('p');
         categoryTitle.classList.add('category-title')
+
+        // const checkbox=document.querySelector('input[name=checkbox]');
+        // checkbox.id='micheckbox';
+        // label = document.createElement('label');
+        // label.id='milabel';
+        // label.htmlFor='micheckbox';
+        // checkbox.parentNode.appendChild(label);
+        // p.appendChild(label);   
 
      
         categoryTitle.setAttribute('id', 'id' + category.id);
