@@ -165,30 +165,23 @@ h2, p{
   text-align: start;
  }
 
-
  .categories-select{
-   position: relative;
-   /* justify-content: end; */
-   margin-top: -20px;
-   margin-bottom: -20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
  }
 
- .categories-select h2{
-   margin: 15px;
-   border-radius: 15px;
-   text-align: justify;
-   background: linear-gradient(178deg, #0A0000 1.82%, rgba(10, 0, 0, 0.00) 144.18%);
-   display: flex;
-   width: 485px;
-   padding: 21px 186px 21px 186px;
-   justify-content: flex-end;
-   align-items: center;
+ .category-container p{
+  padding: 10px 5px 0px 30px;
  }
 
-#categories-preview{
-   position: absolute;
+ /* .categories-preview{
+
+ } */
+
+#id99{
+background-color: #0A0000;
 }
-
  #categories-preview h2{
    margin: 15px;
    border-radius: 15px;
